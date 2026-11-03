@@ -166,6 +166,7 @@ function App() {
     if (page === "test" && timeLeft === 0 && !submitted && !sending) {
       submitTest();
     }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page, timeLeft, submitted, sending]);
 
   const handleCandidateChange = (e) => {
